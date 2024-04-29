@@ -3,12 +3,13 @@ package Modelo;
 public class Libro {
     private String titulo;
     private String categoria;
+    private Usuario usuario;
     private boolean disponible;
 
     public Libro(String titulo, String categoria, boolean disponible) {
         this.titulo = titulo;
         this.categoria = categoria;
-        this.disponible = true;
+        this.usuario = null;
     }
 
     
@@ -18,13 +19,5 @@ public class Libro {
 
     public String getCategoria() {
         return categoria;
-    }
-
-    public boolean isDisponible() {
-        return disponible;
-    }
-
-    public void setDisponible(boolean disponible) {
-        this.disponible = disponible;
     }
 }
