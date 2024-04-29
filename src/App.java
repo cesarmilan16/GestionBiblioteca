@@ -35,15 +35,21 @@ public class App {
                 break;
             case "2":
                 biblioteca.bajaUsuario();
-                break;/* 
+                break; 
             case "3":
-                biblioteca.gestionLibros();
+                biblioteca.altaLibro();
                 break;
             case "4":
-                biblioteca.listarLibrosDisponibles();
-                break;
+                biblioteca.bajaLibro();
+                break;/*
             case "5":
-                biblioteca.listarLibrosListados();
+                biblioteca.prestamoLibro();
+                break;
+            case "6":
+                biblioteca.listarLibros();
+                break;
+            case "7":
+                biblioteca.listarLibrosPrestados()
                 break;*/
             case "9":
                 salir = true;

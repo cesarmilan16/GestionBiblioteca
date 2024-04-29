@@ -20,6 +20,18 @@ public class Biblioteca {
         return usuarioEncontrado;
     }
 
+    public Libro buscarLibro(String titulo) {
+        Libro libroEncontrado = null;
+        int contandor = 0;
+        while (libroEncontrado == null && contandor < libros.size()) {
+            if (libros.get(contandor).getTitulo().equals(titulo)) {
+                libroEncontrado = libros.get(contandor);
+            }
+            contandor ++;
+        }
+        return libroEncontrado;
+    }
+
     public void altaUsuario() {
         System.out.println("***************************");
         System.out.println("****** Alta Usuario *******");
@@ -59,4 +71,42 @@ public class Biblioteca {
         }
     }
 
+    public void altaLibro() {
+        System.out.println("***************************");
+        System.out.println("******* Alta Libro *******");
+        System.out.println("***************************");
+        System.out.println("Nombre libro: ");
+        String titulo = scanner.nextLine();
+        System.out.println("Categoria libro: ");
+        String categoria = scanner.nextLine();
+
+        Libro libroEncontrado = buscarLibro(titulo);
+
+        if (libroEncontrado == null) {
+            Libro libro = new Libro(titulo, categoria, true);
+            libros.add(libro);
+            System.out.println("Libro agregado con exito.");       
+        }
+        else{
+            System.out.println("Libro ya existente.");
+        }
+    }
+
+    public void bajaLibro() {
+        System.out.println("***************************");
+        System.out.println("******* Baja Libro *******");
+        System.out.println("***************************");
+        System.out.println("Nombre libro: ");
+        String titulo = scanner.nextLine();
+
+        Libro libroEncontrado = buscarLibro(titulo);
+
+        if (libroEncontrado == null) {
+            libros.remove(libroEncontrado);
+            System.out.println("Libro borrado con exito.");     
+        }
+        else{
+            System.out.println("Libro no existente.");
+        }
+    }
 }
