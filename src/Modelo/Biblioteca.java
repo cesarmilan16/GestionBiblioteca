@@ -38,12 +38,12 @@ public class Biblioteca {
         System.out.println("***************************");
         System.out.println("Introduce nombre: ");
         String nombre = scanner.nextLine();
-        System.out.println("Introduce apellido: ");
-        String apellido = scanner.nextLine();
 
         Usuario usuarioEncontrado = buscarUsuario(nombre);
 
         if (usuarioEncontrado == null) {
+            System.out.println("Introduce apellido: ");
+            String apellido = scanner.nextLine();
             Usuario usuario = new Usuario(nombre, apellido);
             usuarios.add(usuario);
             System.out.println("Usuario añadido con exito");
@@ -77,12 +77,12 @@ public class Biblioteca {
         System.out.println("***************************");
         System.out.println("Nombre libro: ");
         String titulo = scanner.nextLine();
-        System.out.println("Categoria libro: ");
-        String categoria = scanner.nextLine();
 
         Libro libroEncontrado = buscarLibro(titulo);
 
         if (libroEncontrado == null) {
+            System.out.println("Categoria libro: ");
+            String categoria = scanner.nextLine();
             Libro libro = new Libro(titulo, categoria, true);
             libros.add(libro);
             System.out.println("Libro agregado con exito.");       
