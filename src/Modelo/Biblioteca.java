@@ -101,7 +101,7 @@ public class Biblioteca {
 
         Libro libroEncontrado = buscarLibro(titulo);
 
-        if (libroEncontrado == null) {
+        if (libroEncontrado != null) {
             libros.remove(libroEncontrado);
             System.out.println("Libro borrado con exito.");     
         }

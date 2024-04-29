@@ -20,9 +20,11 @@ public class App {
         System.out.println("*****************************");
         System.out.println("1.- Alta usuario");
         System.out.println("2.- Baja usuario");
-        System.out.println("3.- Gestión libros");
-        System.out.println("4.- Lista de los libros disponibles");
-        System.out.println("5.- Lista de los libros prestados a un usuario");
+        System.out.println("3.- Alta libros");
+        System.out.println("4.- Baja libros");
+        System.out.println("5.- Prestamo libros");
+        System.out.println("6.- Lista de los libros disponibles");
+        System.out.println("7.- Lista de los libros prestados a un usuario");
         System.out.println("9.- Salir");
         
         @SuppressWarnings("resource")
