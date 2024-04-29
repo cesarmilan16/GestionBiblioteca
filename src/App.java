@@ -32,10 +32,10 @@ public class App {
         switch (opcion) {
             case "1":
                 biblioteca.altaUsuario();
-                break;/* 
+                break;
             case "2":
                 biblioteca.bajaUsuario();
-                break;
+                break;/* 
             case "3":
                 biblioteca.gestionLibros();
                 break;
