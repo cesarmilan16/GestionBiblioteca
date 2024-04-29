@@ -101,9 +101,12 @@ public class Biblioteca {
 
         Libro libroEncontrado = buscarLibro(titulo);
 
-        if (libroEncontrado != null) {
+        if (libroEncontrado != null && libroEncontrado.isDisponible()) {
             libros.remove(libroEncontrado);
             System.out.println("Libro borrado con exito.");     
+        }
+        if (libroEncontrado.isDisponible()) {
+            System.out.println("Libro prestado.");
         }
         else{
             System.out.println("Libro no existente.");
