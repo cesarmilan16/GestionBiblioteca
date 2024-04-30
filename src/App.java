@@ -27,7 +27,7 @@ public class App {
         System.out.println("7.- Lista de los libros prestados a un usuario");
         System.out.println("9.- Salir");
         
-        @SuppressWarnings("resource")
+
         Scanner scanner = new Scanner(System.in);
         String opcion = scanner.nextLine();
 
@@ -43,16 +43,16 @@ public class App {
                 break;
             case "4":
                 biblioteca.bajaLibro();
-                break;/*
+                break;
             case "5":
-                biblioteca.prestamoLibro();
+                biblioteca.gestionPrestamoLibro();
                 break;
             case "6":
-                biblioteca.listarLibros();
+                biblioteca.listarLibrosDisponibles();
                 break;
             case "7":
-                biblioteca.listarLibrosPrestados()
-                break;*/
+                biblioteca.listarLibrosPrestados();
+                break;
             case "9":
                 salir = true;
                 break;
