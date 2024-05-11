@@ -20,6 +20,10 @@ public class Usuario {
         return nombre;
     }
 
+    public String getApellido() {
+        return apellido;
+    }
+
     public int getCodigo() {
         return codigo;
     }

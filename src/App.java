@@ -54,6 +54,7 @@ public class App {
                 biblioteca.listarLibrosPrestados();
                 break;
             case "9":
+                scanner.close();
                 salir = true;
                 break;
             default:
